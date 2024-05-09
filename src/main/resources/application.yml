@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: graphql-demo
+    graphql:
+        graphiql:
+            enabled: true
+    r2dbc:
+        url: r2dbc:postgresql://localhost:5432/testdb
+        username: postgres
+        password: postgres
+    flyway: 
+        url: jdbc:postgresql://localhost:5432/testdb
+        locations: classpath:db/postgres/migration
+
